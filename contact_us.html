@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="">
+    <title>CARD</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="bgfixed">
+    <!--    NAVBAR ====================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand top_logo" href="#"><img src="assets/img/logo.png" width="250px" height="120px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="language"><a href="#">Հայ</a> / <a href="#">Eng</a></div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PROJECTS<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NEWSROOM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OUR PARTNERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EXTENSION SERVICES</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 inputWithIcon">
+                <input class="form-control mr-sm-2 search_box" type="search" placeholder="Search" aria-label="Search">
+                <img src="assets/img/srch.png" alt="">
+            </form>
+        </div>
+    </nav>
+    <!--    MAIN CONTENT ===================================-->
+    <!--    the map image section===============================-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12189.881950005318!2d44.498657581857834!3d40.19859610831782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd231ac28c9b%3A0x46266e8d40171e43!2sCARD!5e0!3m2!1sen!2s!4v1510422476056" width="100%" height="500px" frameborder="0" style="border:0"></iframe>
+    <!-- POPUP  -->
+    <div class=" modal-card">
+         <img src="./assets/img/stripped_border.png" alt="" class="striped_border">
+        <div class="container">
+            <div class="row pop_pad">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class='row pop_header'>
+                        <div class="col-sm-12">
+                            <h2 class="green-text">SEND US A MESSAGE</h2>
+                        </div>
+                    </div>
+                    <div class="row pop_body">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="sr-only" for="name">Full name</label>
+                                <input type="text" class="form-control pop_text pop_inp" id="name" placeholder="Full name">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email</label>
+                                <input type="text" class="form-control pop_text pop_inp" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="subject">Subject</label>
+                                <input type="text" class="form-control pop_text pop_inp" id="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <textarea class="msg pop_text pop_area" name="message" placeholder="Message" rows="6" style="min-width: 100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pop_captcha">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6"><img src="assets/img/reCaptcha.png" alt=""></div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                    <div class="row pop_button">
+                        <div class="col-sm-5"></div>
+                        <button type="button" class="btn btn-blue col-sm-2">SUBMIT</button>
+                        <div class="col-sm-5"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+    <!--    the subscribe section ==================================-->
+    <section id="optin" class="clear-both subscribe-section">
+        <div class="row">
+            <div class="col-sm-2 col-md-3 col-lg-4"></div>
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <!--     the button section-->
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8 subscribe">
+                        <p>Subscribe to get newsletters</p>
+                        <button class="btn btn-success subscribe-button" data-toggle="modal" data-target="#myModal">
+                            SUBSCRIBE
+                        </button>
+                        <input type="text" placeholder="Email address">
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+                <div class="row icons">
+                    <img src="./assets/img/social.svg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-3 col-lg-4"></div>
+        </div>
+    </section>
+    <!--footer=====================================-->
+    <footer>
+        <div class="row footer">
+            <div class="col-sm-12 col-md-2">
+                <img src="./assets/img/logo1.png" alt="logo" class="footer-logo">
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <p><a href="">Azatutyan 1/21-40 Yerevan 0037,</a></p>
+                <p><a href="">+374 60 440 550, +374 60 440551</a></p>
+                <p><a href="">card@card.com</a></p>
+            </div>
+            <div class="col-sm12 col-md-3">
+                <p><a href="">ABOUT</a></p>
+                <p><a href="">PROJECTS</a></p>
+                <p><a href="">NEWSROOM</a></p>
+                <p><a href="">OUR PARTNERS</a></p>
+                <p><a href="">CONTACTS</a></p>
+            </div>
+            <div class="col-sm12 col-md-3">
+                <p><a href="">EVENTS</a></p>
+                <p><a href="">ACCOUNTING AND JOBS</a></p>
+                <p><a href="">OUR HISTORY</a></p>
+                <p><a href="">EXTENTION SERVICE</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
